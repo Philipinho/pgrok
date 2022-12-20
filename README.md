@@ -2,8 +2,6 @@
 
 ### ”I want to expose a local server behind a NAT or firewall to the internet.”
 
-**ejemplo.me** service is shuting down, please take a look, https://github.com/jerson/pgrok/issues/20
-
 # Install client
 
 Install supports **Linux** and **MacOS** with **homebrew**
@@ -16,6 +14,11 @@ brew install jerson/tap/pgrok
 ```bash
 pgrok -subdomain=customsubdomain 3000
 ```
+To add the server address on the terminal use 
+```bash
+pgrok -serveraddr="server.com:4443" -subdomain=customsubdomain 3000
+```
+
 sample output
 
 ```bash
